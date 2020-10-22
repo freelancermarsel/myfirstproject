@@ -39,3 +39,86 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 /* *--------------------------------------------------------------------------------------------------------- */
+
+.arial {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.font-size30 {
+	font-size: 30px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.font700 {
+	/*  * Все виды значения font-weight:
+	*100: Thin;
+	*200: Extra Light (Ultra Light);
+	*300: Light;
+	*400: Normal;
+	*500: Medium;
+	*600: Semi Bold (Demi Bold);
+	*700: Bold;
+	*800: Extra Bold (Ultra Bold);
+	*900: Black (Heavy).
+	* */
+
+	font-weight: 700;
+}
+
+.red {
+	/* Виды записи цвета */
+	color: red;
+	color: #ff0000;
+	color: rgba(240, 52, 52, 1);
+}
+
+.textright {
+	text-align: center;
+}
+
+.decoration {
+	text-decoration: line-through;
+}
+
+.shadow {
+	text-shadow: 1px 1px 10px #000;
+}
+
+.uppercase {
+	/* *
+		*capitalize
+		*Первый символ каждого слова в предложении будет заглавным. Остальные символы свой вид не меняют.
+		*lowercase
+		*Все символы текста становятся строчными (нижний регистр).
+		*uppercase
+		*Все символы текста становятся прописными (верхний регистр).
+		*none
+		*Не меняет регистр символов.
+		*inherit
+		*Наследует значение родителя.
+	* */
+	text-transform: uppercase;
+}
+
+.indent {
+	text-indent: 50px;
+}
+
+.lspace {
+	letter-spacing: 5px;
+}
+
+.wspace {
+	word-spacing: 5px;
+}
+
+.whitespace {
+	white-space: nowrap;
+}
+
+.lineheight {
+	line-height: 20px;
+}
