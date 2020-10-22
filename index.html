@@ -8,40 +8,94 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Заголовок страницы в браузере -->
-		<title>Знакомство с HTML тэгами, часть №1</title>
+		<title>Знакомство с HTML тэгами, часть №2</title>
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
 		<!-- Контент -->
 
-		<!-- header - это шапка сайта -->
-		<header>
-			<!-- nav - это навигация -->
-			<nav>содержимое тега nav</nav>
-		</header>
-		
-		<!-- div - блок сайта -->
-		<div>
+		<!-- ! Блочные тэги - занимает всю строку вне зависимости от содержимого контента -->
+
+		<!-- h1 - самый большой заголовок, в странице используется только 1 раз -->
+		<h1>содержимое тега h1</h1>
+
+		<!-- все остальные заголовки в странице могут использоваться бесконечно -->
+		<h2>содержимое тега h2</h2>
+		<h3>содержимое тега h3</h3>
+		<h4>содержимое тега h4</h4>
+		<h5>содержимое тега h5</h5>
+		<h6>содержимое тега h6</h6>
+
+		<!-- p - определяет текстовый абзац -->
+		<p>
+			Абзац №1
 			<!-- lorem - текст рыба -->
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi ut eum recusandae iure odit alias error culpa. Sint sapiente minus eaque neque voluptates provident quis, nam maxime alias consectetur.
-		</div>
+			<!-- span - строчный блок -->
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> 
+			Corrupti iure ea tenetur velit aut accusamus dolores nemo culpa, pariatur a ducimus dignissimos
+			<!-- br - перенос но новую строку -->
+			<br>
+			voluptatem nulla assumenda id amet atque cupiditate quasi?
+		</p>
+
+		<!-- p - определяет текстовый абзац -->
+		<p>
+			Абзац №2
+			<!-- lorem - текст рыба -->
+			<!-- a - ссылка -->
+			<a href="http://google.com" target="_blank" rel="noopener noreferrer">Lorem ipsum dolor</a> 
+			sit amet consectetur adipisicing elit. Corrupti iure ea tenetur velit aut accusamus dolores nemo culpa, pariatur a ducimus dignissimos voluptatem nulla assumenda id amet atque cupiditate quasi?
+		</p>
+
+		<!-- ul - Маркерованный список -->
+		<ul>
+			<!-- li - пункт списка -->
+			<li>содержимое тега</li>
+			<li>содержимое тега</li>
+			<li>содержимое тега</li>
+			<li>содержимое тега</li>
+		</ul>
+
+		<!-- Нумерованный список -->
+		<ol>
+			<!-- li - пункт списка -->
+			<li>содержимое тега</li>
+			<li>содержимое тега</li>
+			<li>содержимое тега</li>
+			<li>содержимое тега</li>
+			<li>содержимое тега</li>
+		</ol>
+
+		<!-- ! Строчные тэги - идут в одну строку, один за другим -->
+
+		<!-- span - строчный блок -->
+		<span>содержимое тега span #1</span>
+		<span>содержимое тега span #2</span>
+		<span>
+			<!-- lorem - текст рыба -->
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas exercitationem, dolor alias magnam, animi ea ipsam harum, iure accusantium ipsum perferendis officiis! Dolorum odit expedita magni unde doloribus nemo quasi?
+		</span>
+
+		<!-- a - ссылка -->
+		<a href="http://google.com" target="_blank" rel="noopener noreferrer">содержимое тега</a>
+
+		<!-- Картинка -->
+		<img src="https://sun9-27.userapi.com/impg/9LNlj2zs1dhJPXWyPaqm8_PXxL8-iFxZvKwrxw/UVSHIJBj8Wg.jpg?size=1600x900&quality=90&proxy=1&sign=b57bbb15372589c1a721e92f5dfac773" alt="Актpиca, Анa де Аpмac 😍">
+
+		<!-- ! Внутри строчных тэгов писать блочные нельзя! Например: -->
+		<span>
+			<p></p>
+			<h2></h2>
+			<div></div>
+			<!-- и т.д -->
+		</span>
 		
-		<!-- div - блок сайта -->
+		<!-- ! Внутри блочных тэгов писать строчные можно, например: -->
 		<div>
-			<!-- lorem10 - текст рыба с 10 словами -->
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil.
+			<div>
+				<span></span>
+			</div>
 		</div>
-
-		<!-- div - блок сайта -->
-		<div>
-			<!-- lorem5 - текст рыба с 5 словами -->
-			Lorem ipsum dolor sit amet.
-		</div>
-
-		<!-- footer - подвал сайта -->
-		<footer>
-			содержимое подвала
-		</footer>
 
 	</body>
 </html>
