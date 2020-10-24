@@ -25,6 +25,8 @@ html,body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	padding: 150px 30px 30px 30px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 input,button,textarea{font-family: inherit;}
@@ -40,50 +42,32 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 /* *--------------------------------------------------------------------------------------------------------- */
 
-/* ! 
-	? solid - сплашная граница,
-	? dashed - пунктирная граница,
-	? dotted - точечная граница
-! */ 
+.block {
+	/* * Общие настройки */
+	height: 500px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
 
+	/* * Различные background стили */
 
-/* * box-shadow: */
-/* !
-	? none - Отменяет добавление тени.
+	background: url('https://autolada.ru/images/avatars/1/17/170290330055375b565a1a5.png') 50%/100px no-repeat, 
+	url('https://autolada.ru/images/avatars/1/17/170290330055375b565a1a5.png') 0 0 no-repeat, 
+	url('https://www.mithesports.com/wp-content/uploads/2014/03/bg.jpg') 50%/cover no-repeat;
 
-	? inset - Тень выводится внутри элемента. Необязательный параметр.
-
-	? сдвиг по x - Смещение тени по горизонтали относительно элемента. Положительное значение этого параметра задает сдвиг тени вправо, отрицательное — влево. Обязательный параметр.
-
-	? сдвиг по y - Смещение тени по вертикали относительно элемента. Положительное значение задает сдвиг тени вниз, отрицательное — вверх. Обязательный параметр.
-
-	? размытие - Задает радиус размытия тени. Чем больше это значение, тем сильнее тень сглаживается, становится шире и светлее. Если этот параметр не задан, по умолчанию устанавливается равным 0, тень при этом будет четкой, а не размытой.
-
-	? растяжение - Положительное значение растягивает тень, отрицательное, наоборот, ее сжимает. Если этот параметр не задан, по умолчанию устанавливается 0, при этом тень будет того же размера, что и элемент.
-
-	? цвет - Цвет тени в любом доступном CSS формате, по умолчанию тень черная. Необязательный параметр.
-! */
-
-.example-block {
-
-	visibility: hidden;
-
-	font-size: 50px;
-
-}
-
-
-
-.example-string {
-	font-size: 50px;
-
+	/* ! rbga(red, green, blue, прозрачность) */
+	/* background: rgba(129, 45, 211, 0.2); */
 	
 }
 
-.example-image {
-	border: 1px dotted #000;
-	border-radius: 50px;
-	overflow: hidden;
+.list {
+	margin: 0 0 50px 0;
+}
+
+.list li {
+	font-size: 24px;
+	margin: 0 0 15px 0;
+	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYc-V52X2ubaGi6GyGD9y7PUzXpHzndtgW_g&usqp=CAU') left/24px no-repeat;
+	padding: 0 0 0 30px;
 }
 
 
