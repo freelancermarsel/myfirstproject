@@ -27,6 +27,7 @@ html,body {
 	-webkit-text-size-adjust: 100%;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	padding: 30px;
+	font-size: 24px;
 }
 
 input,button,textarea{font-family: inherit;}
@@ -42,126 +43,80 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 /* *--------------------------------------------------------------------------------------------------------- */
 
-.block {
-	margin: 0 0 30px 0;
-}
-
-/* .block:hover {
-	background: blue;
-} */
-
-.block p {
-	font-size: 18px;
-	line-height: 24px;
-	margin: 0 0 20px 0;
-}
-
-.block p:nth-child(odd) {
-	background-color: yellow;
-}
-
-.block p :nth-child(even) {
-	background-color: #eee;
-}
-
-.block p:nth-child(1) {
-	background-color: yellow;
-}
-
-.block p:nth-child(2) {
-	background-color: #eee;
-}
-
-.block p:nth-child(3) {
-	background-color: green;
-}
-
-.block p:nth-child(3):hover {
-	background-color: yellow;
-}
-
-.block p:nth-child(2){
-	text-transform: uppercase;
-}
-
-.link {
-	color: red;
-}
-
-.link:visited {
-	color: green;
-}
-
-.link:hover {
-	text-decoration: underline;
-	color: blue;
-}
-
-.link:active {
-	color: yellow;
-}
-
-.textinput {
-	border: 1px solid #666;
-	height: 50px;
-	padding: 0 15px;
-	font-size: 18px;
-	width: 300px;
-	margin: 0 0 10px 0;
-}
-
-.textinput:focus {
-	box-shadow: 0 0 10px rgba(0,0,0,0.8);
-}
-
-.textbutton {
-	display: block;
-	width: 300px;
-	height: 50px;
-	background-color: #666;
-	font-size: 18px;
-	color: #fff;
-	text-transform: uppercase;
-	margin: 0 0 30px 0;
-}
-
-.textbutton:hover {
-	background: #333;
-	color: yellow;
-}
-
-.textbutton:active {
-	background: #eee;
-}
-
-.list {
-
+.container {
+	border: 1px solid #000;
+	max-width: 1000px;
+	width: 1005px;
+	margin: 30px auto;
 }
 
 .list li {
-	font-size: 18px;
-	margin: 0 0 15px 0;
+	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLVyi32-ZZfNXOxn0ugIu5H7N1KwyuW_4M_A&usqp=CAU') left/24px no-repeat;
+	padding: 0 0 0 30px;
 }
 
-/* .list li:first-child {
-	color: green;
+.list li:first-child {
+	text-decoration: line-through;
+}
+
+.list li:first-child:hover {
+	text-decoration: none;
+}
+
+.list li:nth-child(2) {
+	font-weight: 700;
+}
+
+.list li:nth-child(2):hover {
+	color: red;
+}
+
+.list li:nth-child(3) {
+	font-style: italic;
+}
+
+.list li:nth-child(3):hover {
+	font-style: normal;
 }
 
 .list li:last-child {
-	color: blue;
-	font-weight: 700;
-} */
-
-
-/* !
-	* odd - Все нечетные номера элементов.
-	* even - Все четные номера элементов.
-	* число - Порядковый номер дочернего элемента относительно своего родителя. Нумерация начинается с 1, это будет первый элемент в списке.
-	* выражение - Задается в виде an+b, где a и b целые числа, а n — счетчик, который автоматически принимает значение 0, 1, 2...
-! */
-
-.list li:nth-child(even) {
 	text-transform: uppercase;
+}
+
+.list li:last-child:hover {
+	text-transform: none;
+}
+
+
+/* * Не списки */
+
+button {
+	margin: 50px;
+	padding: 15px 40px;
+	border-radius: 25px;
+	text-transform: uppercase;
+	color: #fff;
+	background: rgb(53, 109, 182);
+}
+
+button:hover {
+	background: rgb(22, 90, 70);
+}
+
+button:active {
+	background: rgb(68, 73, 73);
+}
+
+/* * Input */
+input {
+	display: block;
+	padding: 15px 40px;
+	box-shadow: 0 0 0 1px green;
+	margin: 50px 0;
+}
+
+input:focus {
+	box-shadow: 0 0 10px blue;
 }
 
 
