@@ -41,46 +41,22 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 /* *--------------------------------------------------------------------------------------------------------- */
 
-.title {
-	font-size: 32px;
-	color: skyblue;
+/* *! Блочный блок */
+.example-block {
+	margin: 0 0 30px 0;
+	border: 1px solid #000;
 }
-.text {
-	font-size: 16px;
+
+/* *! Строчный блок */
+.example-string {
+	display: inline-block;
+	width: 500px;
+	padding: 20px;
+	border: 1px solid #000;
 }
-.subtitle {
-	font-size: 26px;
+
+/* *! Картинка (строчный блок) */
+.power-supply {
+	
 }
-.bold {
-	font-weight: 700;
-}
-.red {
-	color: red;
-}
-.hometask {
-	font-size: 26px;
-}
-.right {
-	text-align: right;
-}
-.uppercase {
-	text-transform: uppercase;
-}
-.italic {
-	font-style: italic;
-}
-.underline {
-	text-decoration: underline;
-}
-.center {
-	text-align: center;
-}
-.line-trough {
-	text-decoration: line-through;
-}
-.little-text {
-	font-size: 12px;
-}
-.shadow {
-	text-shadow: 1px 1px 1px #000;
-}
+
