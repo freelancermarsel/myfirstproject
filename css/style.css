@@ -42,92 +42,39 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 /* *--------------------------------------------------------------------------------------------------------- */
 
+/* *
+	? absolute - Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. Положение элемента задается свойствами left, top, right и bottom, также на положение влияет значение свойства position родительского элемента. Так, если у родителя значение position установлено как static или родителя нет, то отсчет координат ведется от края окна браузера. Если у родителя значение position задано как fixed, relative или absolute, то отсчет координат ведется от края родительского элемента.
+
+	? fixed - По своему действию это значение близко к absolute, но в отличие от него привязывается к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы. Браузер Firefox вообще не отображает полосы прокрутки, если положение элемента задано фиксированным, и оно не помещается целиком в окно браузера. В браузере Opera хотя и показываются полосы прокрутки, но они никак не влияют на позицию элемента.
+
+	? relative - Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.
+
+	? static - Элементы отображаются как обычно. Использование свойств left, top, right и bottom не приводит к каким-либо результатам.
+
+	? inherit - Наследует значение родителя. 
+* */
+
 .list {
-	margin: 0 0 100px 0;
+	font-size: 18px;
 }
 
 .list li {
+	margin: 0 0 10px 0;
 	position: relative;
-	line-height: 27px;
-	font-size: 24px;
+	padding: 0 30px 0;
 }
 
 .list li::before {
-	content: url('../img/checked.svg');
-	position: absolute;
-	left: -30px;
-	top: 0;
+	content: '';
+	background: url('../img/checked.svg') 0 0 no-repeat;
 	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: -4px;
 }
 
-.list li:first-child {
-	text-decoration: line-through;
-}
 
-.list li:first-child:hover {
-	text-decoration: none;
-}
-
-.list li:nth-child(2) {
-	font-weight: 700;
-}
-
-.list li:nth-child(2):hover {
-	font-weight: 400;
-	color: red;
-}
-
-.list li:nth-child(3) {
-	font-style: italic;
-}
-
-.list li:nth-child(3):hover {
-	font-style: normal;
-}
-
-.list li:nth-child(4) {
-	text-transform: uppercase;
-}
-
-.list li:nth-child(4):hover {
-	text-transform: none;
-}
-
-a {
-	padding: 15px 40px;
-	text-transform: uppercase;
-	background: rgb(46, 98, 139);
-	color: #fff;
-	border-radius: 25px;
-}
-
-a::after {
-	padding: 0 0 0 10px;
-	content: '→';
-}
-
-a:hover {
-	background: rgb(30, 90, 67);
-}
-
-a:active {
-	background: rgb(58, 55, 11);
-}
-
-/* text */
-.text {
-	margin: 100px 0 0 0;
-}
-
-.text::first-line {
-	color: red;
-}
-
-.text2::first-letter {
-	font-size: 50px;
-	color: red;
-	text-transform: uppercase;
-}
 
 
 
