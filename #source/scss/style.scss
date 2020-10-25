@@ -1,84 +1,99 @@
-// ! Подсказска
-// * font-weight: bold|bolder|lighter|normal|100|200|300|400|500|600|700|800|900
-
-
-
-// ! Импорт - соибрает файлы в одно:
-
-// ? Подключение конвертированных шрифтов
-@font-face {
-	font-family: 'PFDinTextCondPro';
-	src: url('../fonts/pdfintextcondpro-regular.eot');
-	src: local(''), url('../fonts/pfdintextcondpro-regular.woff'), format('woff'), url('../fonts/pfdintextcondpro-regular.ttf'), format('truetype'), 
-	url('../fonts/pfdintextcondpro-regular.svg'), format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'PFDinTextCondPro';
-	src: url('../fonts/pfdintextcondpro-medium.eot');
-	src: local(''), url('../fonts/pfdintextcondpro-medium.woff'), format('woff'), url('../fonts/pfdintextcondpro-medium.ttf'), format('truetype'), 
-	url('../fonts/pfdintextcondpro-medium.svg'), format('svg');
-	font-weight: 500;
-	font-style: normal;
-}
-
-// ? Подключение шрифтов с Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-
 // ? Файл обнуляющих стилей
 @import "_reset";
 
+// ? Подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 // ! Основные стили
-
-.textoriginal {
-	border: 1px solid #000;
-	margin: 0 0 30px 0;
-	font-size: 30px;
-	line-height: 35px;
-	
-	p {margin: 0 0 30px 0;}
+.about {
+	&__body {
+		max-width: 823px;
+		margin: 0 auto;
+	}
+	&__header {
+		margin: 0 0 65px 0;
+	}
+	&__title {
+		margin: 0 0 30px 0;
+	}
+	&__text {
+		max-width: 688px;
+		color: #868585;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 25.89px;
+		margin: 0 auto;
+	}
+	&__row {
+		display: flex;
+		font-size: 0;
+		margin: 0px -15px;
+	}
+	&__column {
+		padding: 0px 15px;
+		flex: 0 0 33.333%;
+	}
 }
-
-.text {
-	border: 1px solid #000;
-
-	font-family: 'PT Sans';
-	font-size: 30px;
+.title {
+	font-size: 34px;
 	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 8.95px;
+	position: relative;
+	text-align: center;
+	padding: 0 0 30px 0;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 50px;
+		bottom: 0;
+		height: 1px;
+		left: 50%;
+		background-color: #000;
+		margin: 0 0 0 -25px;
+	}
+}
+.item-about {
+	&__icon {
+		border-radius: 50%;
+		width: 92px;
+		height: 92px;
+		border: 2px solid #f1f1f1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 0 40px 0;
 
-	line-height: 35px;
-	
-	p {margin: 0 0 30px 0;}
+		img {
+			width: 41px;
+			height: 41px;
+		}
+	}
+	&__title {
+		text-align: center;
+		color: #000;
+		font-size: 22px;
+		text-transform: uppercase;
+		letter-spacing: 3.52px;
+		margin: 0 0 35px 0;
+	}
+	&__text {
+		text-align: center;
+		width: 183px;
+		color: #868585;
+		font-family: 'Lato';
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 26px;
+		text-align: center;
+	}
 }
 
-.text-PFDin {
-	border: 1px solid #000;
 
-	font-family: 'PFDinTextCondPro';
-	font-size: 30px;
 
-	margin: 0 0 30px 0;
 
-	line-height: 35px;
-	
-	p {margin: 0 0 30px 0;}
-}
 
-.text-PFDinMedium {
-	font-family: 'PFDinTextCondPro';
-	font-weight: 500;
-	font-size: 30px;
 
-	margin: 0 0 30px 0;
-
-	line-height: 35px;
-	
-	p {margin: 0 0 30px 0;}
-
-	border: 1px solid #000;
-}
 
 
