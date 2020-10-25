@@ -1,84 +1,117 @@
+@charset "UTF-8";
 /* * Обнуляющий стиль */
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-*,*::before,*::after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body {
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	padding: 30px;
+:focus, :active {
+  outline: none;
 }
 
-input,button,textarea{font-family: inherit;}
+a:focus, a:active {
+  outline: none;
+}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+nav, footer, header, aside {
+  display: block;
+}
 
-h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
 /* *--------------------------------------------------------------------------------------------------------- */
-
-/* *
-	? absolute - Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. Положение элемента задается свойствами left, top, right и bottom, также на положение влияет значение свойства position родительского элемента. Так, если у родителя значение position установлено как static или родителя нет, то отсчет координат ведется от края окна браузера. Если у родителя значение position задано как fixed, relative или absolute, то отсчет координат ведется от края родительского элемента.
-
-	? fixed - По своему действию это значение близко к absolute, но в отличие от него привязывается к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы. Браузер Firefox вообще не отображает полосы прокрутки, если положение элемента задано фиксированным, и оно не помещается целиком в окно браузера. В браузере Opera хотя и показываются полосы прокрутки, но они никак не влияют на позицию элемента.
-
-	? relative - Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.
-
-	? static - Элементы отображаются как обычно. Использование свойств left, top, right и bottom не приводит к каким-либо результатам.
-
-	? inherit - Наследует значение родителя. 
-* */
-
-.list {
-	font-size: 18px;
+.tplborder, .link, .link-2 {
+  font-size: 100px;
+  border-bottom: 5px dashed red;
 }
 
-.list li {
-	margin: 0 0 10px 0;
-	position: relative;
-	padding: 0 30px 0;
+.block {
+  max-width: 31.25%;
+  background-color: #666;
+  padding: 30px;
+  line-height: 60px;
 }
 
-.list li::before {
-	content: '';
-	background: url('../img/checked.svg') 0 0 no-repeat;
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	left: 0;
-	top: -4px;
+.block .block__text {
+  font-size: 100px;
 }
 
+.block .block__text span {
+  color: green;
+}
 
+.link {
+  color: #000;
+  text-decoration: underline;
+  font-size: 100px;
+  font-size: 80px;
+  color: green;
+}
 
+.block .link {
+  font-size: 100px;
+}
 
+.link:hover {
+  color: #fff;
+}
 
-
-
-
-
+.link-2 {
+  font-size: 50px;
+  color: green;
+  border-bottom: 5px dashed #000;
+}
