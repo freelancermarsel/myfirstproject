@@ -8,9 +8,6 @@
 // ? Подключение шрифтов
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-// ? Подключение файлов стилей страниц и элеменетов
-@import "_baguetteBox";
-
 // ? Переменные
 $mw:1110;
 // * Маленькие ноутбуки
@@ -77,8 +74,7 @@ $md4 : 479.98;
 
 // Mainblock
 .mainblock {
-	// background: url('../../img/mainblock/bg.jpg') center fixed no-repeat;
-	background: #000;
+	background: url('../../img/mainblock/bg.jpg') center fixed no-repeat;
 	min-height: 100vh;
 	@include flexbox();
 	flex: 1 1 auto;
@@ -154,15 +150,6 @@ $md4 : 479.98;
 		position: relative;
 		animation: arrow 2s infinite ease;
 	}
-	// .mainblock__image
-	&.image {
-		background: url('../../img/mainblock/bg.jpg') center/cover no-repeat;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
 }
 
 @keyframes arrow{
@@ -196,20 +183,9 @@ $md4 : 479.98;
 	&_w {
 		color: #fff;
 		border: 1px solid #fff;
-		transition: all .3s ease;
 		&:hover {
 			background-color: #fff;
 			color: #000;
-		}
-	}
-
-	&_b {
-		color: #000;
-		border: 1px solid #000;
-		transition: all .3s ease;
-		&:hover {
-			background-color: #000;
-			color: #fff;
 		}
 	}
 }
