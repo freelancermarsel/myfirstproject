@@ -74,7 +74,7 @@ $md4 : 479.98;
 
 // Mainblock
 .mainblock {
-	background: url('../../img/mainblock/bg.jpg') center fixed no-repeat;
+	background: url(../../img/mainblock/bg.jpg);
 	min-height: 100vh;
 	@include flexbox();
 	flex: 1 1 auto;
